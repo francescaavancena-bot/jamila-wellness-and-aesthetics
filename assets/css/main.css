@@ -3119,16 +3119,17 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #b98e57;
+			background-color: #fafafa;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #b98e57 !important;
+			font-weight: 200;
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #b98e57;
+				background-color: #e9e8e8;
 			}
 
 			input[type="submit"].primary:active,
