@@ -552,6 +552,7 @@ input, select, textarea {
 	}
 
 	body.landing {
+		
 		text-decoration: none;
 	}
 
@@ -3119,9 +3120,9 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #fafafa;
+			background-color: #b98e57;
 			box-shadow: none;
-			color: #b98e57 !important;
+			color: #ffffff !important;
 			font-weight: 200;
 		}
 
@@ -3129,7 +3130,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #e9e8e8;
+				background-color: #a9814d;
 			}
 
 			input[type="submit"].primary:active,
@@ -3307,7 +3308,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(215, 215, 215, 0.774);
+			background: rgba(239, 239, 239, 0.774);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3421,6 +3422,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
+		
 		padding: 6em 0 4em 0;
 	}
 
@@ -3588,23 +3590,25 @@ input, select, textarea {
 			}
 
 	body.landing .dropotron.level-0 {
-		margin-top: 0;
+		margin-top: 0px;
 	}
 
 /* Header */
 
 	#page-wrapper {
-		padding-top: 3.5em;
+		padding: 0;
 	}
+	
 
 	#header {
-		background: rgba(255, 255, 255, 0.965);
+		padding: 0px;
+		background: rgba(255, 255, 255, 0.328);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
-		position: fixed;
+		position: sticky;
 		top: 0;
 		width: 100%;
 		z-index: 100;
@@ -3614,16 +3618,21 @@ input, select, textarea {
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
-			margin: 0;
-			position: absolute;
-			top: 0;
+			padding-top: 0%;
+			margin: 0%;
+			top: 0%;
+			height: 60px;
+			
 		}
 
 		#header nav {
+			margin-top: 0%;
+			padding-top: 0%;
 			position: absolute;
 			z-index: 1000;
 			right: 1em;
 			top: 0;
+			
 		}
 
 			#header nav ul {
@@ -3638,7 +3647,7 @@ input, select, textarea {
 
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
-						color: #f2f2f2;
+						color: #7e7e7e;
 						display: inline-block;
 						height: inherit;
 						line-height: inherit;
@@ -3666,18 +3675,30 @@ input, select, textarea {
 
 	body.landing #page-wrapper {
 		padding-top: 0;
+		
+	}
+	/* to change the LANDING PAGE NAVIGATION */
+	body.landing #header {
+		padding-top: 0px !important;/*to make nav aligned to banner*/
+		/*background: rgba(0,0,0,0.2); /*make nav transparent*/
+  		/*backdrop-filter: blur(10px);*/
+		background-color: #f7f7f7;
+		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
+		position: fixed;
+		margin-top: 0%;
+		height: 60px;
+		overflow: hidden;
+		
+
 	}
 
-	body.landing #header {
-		background: transparent;
-		box-shadow: none;
-		position: absolute;
-	}
 
 /* Banner */
 
 	#banner {
 		
+		margin-top: 0px;
+		padding-top: 0px;
 		background-attachment: fixed;
 		background-color: #ffffff;
 		background-image: url("../../images/beauty.png");
@@ -3688,6 +3709,7 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		z-index: 21;
+		
 		
 	}
 
@@ -3921,7 +3943,7 @@ input, select, textarea {
 				}
 
 				.spotlight .content {
-					background-color: #ececec;
+					background-color: #efefef;
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
@@ -4114,7 +4136,6 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				padding-bottom: 1px;
 				padding-top: 0px !important;/*to make nav aligned to banner*/
 			}
 
@@ -4131,11 +4152,10 @@ input, select, textarea {
 				height: 65px;
 				left: 0;
 				position: fixed;
-				
 				top: 0;
 				width: 100%;
 				z-index: 100;
-				background: #f1f1f16b;
+				background: #efefef;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4358,3 +4378,16 @@ input, select, textarea {
 					}
 
 	}
+
+/* NAV logo adjustment*/
+.logo-img {
+  max-height: 100%;
+  padding-left: 25px;
+}
+
+/* NAV logo adjustment for smaller screen*/
+@media (max-width: 768px) {
+  .logo-img {
+    max-height: 150%;
+  }
+}
