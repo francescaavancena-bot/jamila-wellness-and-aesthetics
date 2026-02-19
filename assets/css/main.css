@@ -2536,7 +2536,7 @@ input, select, textarea {
 
 	.service-box5 {
 		background: #ffffff;
-		background-image: linear-gradient(rgba(253, 253, 253, 0.345), rgba(0, 0, 0, 0.465)),url("../../images/botox\ treatment.png");
+		background-image: linear-gradient(rgba(253, 253, 253, 0.345), rgba(0, 0, 0, 0.465)),url("../../images/botoxtreatment.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -3132,7 +3132,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #b98e57;
+			background-color: #b98e579b;
 			box-shadow: none;
 			color: #ffffff !important;
 			font-weight: 200;
@@ -3702,7 +3702,7 @@ input, select, textarea {
 		padding-top: 0px !important;/*to make nav aligned to banner*/
 		/*background: rgba(0,0,0,0.2); /*make nav transparent*/
   		/*backdrop-filter: blur(10px);*/
-		background-color: #f7f7f7;
+		background-color: #ffffffbb;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		position: fixed;
 		margin-top: 0%;
