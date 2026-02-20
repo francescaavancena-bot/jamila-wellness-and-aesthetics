@@ -45,37 +45,43 @@
 								</ul>
 							</li>
 							<li><a href="contact-us.html">Contact Us</a></li>
-							<li><a href="#" class="button primary">Book Now</a></li>
+							<li><a href="tel:+16478212265" class="button primary">Book Now</a></li>
 						</ul>
 					</nav>
 				</header>
 
+				<section id="service-banner" style="background-image: url('images/beauty.png'); background-position: center calc(100% - 70px);">
+			<header>
+				<!--<h2>Botox</h2>-->
+			</header>
+			</section>
+
 				<!-- Banner -->
-				<section id="contactbanner">
+				<!-- <section id="contactbanner">
 					<div class="content" >
 						<header>
 							<h2>Contact Us</p>
 						</header>
 						<br>
-						<!--<a href="https://www.example.com" class="button-link">Book a Free Consultation</a>-->
-						<!--<span class="image"><img src="images/beauty.png" alt="" /></span>-->
+						<a href="https://www.example.com" class="button-link">Book a Free Consultation</a>
+						<span class="image"><img src="images/beauty.png" alt="" /></span>
 					</div>
-					<!--<a href="#four" class="goto-next scrolly">Next</a>-->
-				</section>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>-->
 
 						<!-- Contact Section -->
 				<section id="contact-info">
 
-					<h2 style="color: #b98e57">Contact Us</h2>
+					<!--<h2 style="color: #b98e57">Contact Us</h2>-->
 					<div class="contact-container">
 
 						<div class="contact-box">
 						<h3>Location</h3>
-						<p>Inside Synergy, 334 Lakeshore Rd E, Oakville</p>
+						<p><a href = "https://share.google/As32s6KN4bIzrvN5E" target="_blank"><span style="background-color: #d39e5886;">Inside Synergy,</span> 334 Lakeshore Rd E, Oakville</a></p>
 						</div>
 
 						<div class="contact-box">
-						<h3>Phone</h3>
+						<h3>Call/Text</h3>
 						<p><a href="tel:+16478212265">(647) 821-2265</a></p>
 						</div>
 
@@ -86,29 +92,32 @@
 
 					</div>
 				</section>
-
 						
 
 						<!-- Form -->
 							<section>
-								<h3>Form</h3>
-								<form method="post" action="#">
+								<h3>Send a message for any inquiries</h3>
+								<form method="POST" action="https://formspree.io/f/abc123xy">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="name" id="name" value="" placeholder="Name" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
+											<input type="email" name="email" id="email" value="" placeholder="Email Address" />
 										</div>
 										<div class="col-12">
 											<select name="category" id="category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
+												<option value="">- Service -</option>
+												<option value="1">IV Drip/Wellness Shots</option>
+												<option value="1">PRP</option>
+												<option value="1">Exosomes</option>
+												<option value="1">Dermal Fillers</option>
+												<option value="1">Botox</option>
+												<option value="1">Skin Boosters</option>
+												<option value="1">Other</option>
 											</select>
 										</div>
+										<!--
 										<div class="col-4 col-12-medium">
 											<input type="radio" id="priority-low" name="priority" checked>
 											<label for="priority-low">Low Priority</label>
@@ -128,15 +137,17 @@
 										<div class="col-6 col-12-medium">
 											<input type="checkbox" id="human" name="human" checked>
 											<label for="human">I am a human and not a robot</label>
-										</div>
+										</div>-->
 										<div class="col-12">
 											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
+												<li><input type="submit" value="Send" class="primary" /></li>
+												<li><input type="reset" value="Clear" /></li>
 											</ul>
+
+											<br>
 										</div>
 									</div>
 								</form>
